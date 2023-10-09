@@ -4,6 +4,6 @@
  *  PLEASE DO NOT REMOVE `export default function`
  */
 export default countLetterR = (string) => {
-  const newArray = string.match(/R/g);
-  return newArray.length;
+  const AllRMatches = string.match(/R/g);
+  return AllRMatches.length;
 };
