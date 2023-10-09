@@ -7,7 +7,7 @@
 // FUNCTION 1
 export default function cntRbt(ls) {
   let count = 0;
-  for (var i = 0; i < ls.length; i++) {
+  for (let i = 0; i < ls.length; i++) {
     if (ls[i] == "R") {
       count++;
     }
