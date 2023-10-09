@@ -7,5 +7,3 @@ export default countLetterR = (string) => {
   const newArray = string.match(/R/g);
   return newArray.length;
 };
-
-console.log(countLetterR("abcdefRRR1234"));
