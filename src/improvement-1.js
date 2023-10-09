@@ -6,11 +6,11 @@
 
 // FUNCTION 1
 export default function cntRbt(ls) {
-  let cnt = 0;
+  let count = 0;
   for (var i = 0; i < ls.length; i++) {
     if (ls[i] == "R") {
-      cnt++;
+      count++;
     }
   }
-  return cnt;
+  return count;
 }
