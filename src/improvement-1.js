@@ -3,14 +3,10 @@
  *  YOU CAN REPLACE THE CODE INSIDE THE FUNCTIONS, THE FUNCTION NAME, ETC.
  *  PLEASE DO NOT REMOVE `export default function`
  */
-
-// FUNCTION 1
-export default function cntRbt(ls) {
-  let count = 0;
-  for (let i = 0; i < ls.length; i++) {
-    if (ls[i] == "R") {
-      count++;
-    }
-  }
-  return count;
+export default function countLetterR(string) {
+  const newArray = string.match(/R/g);
+  return newArray.length
+  
 }
+
+console.log(countLetterR("abcdefRRR1234"));
