@@ -14,11 +14,12 @@ export default function penaltyPoints(password = "") {
   // * * * * * * * * * * * * * * * * * * * * * * * * * * * *
   //
   let count = 0;
+
+  // check if a password is empty
   if (!password || password === "" || password == "null") return 0;
   password.split("").forEach((char, index) => {
     if (password[index] === password[index - 1]) count++;
   });
-
   if (count >= 2) return 2;
   return count;
 }
